@@ -22,6 +22,7 @@ jobs:
       - uses: github/branch-deploy@v10.4.1
         id: branch-deploy
         with:
+          allow_non_default_target_branch_deployments: "true"
           trigger: ".deploy"
           environment: "dev"
       
