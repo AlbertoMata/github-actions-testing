@@ -23,6 +23,7 @@ jobs:
         id: branch-deploy
         with:
           allow_non_default_target_branch_deployments: "true"
+          environment_targets: "dev,qa,uat,prod"
           enforced_deployment_order: "dev,qa,uat,prod"
           trigger: ".deploy"
           environment: "dev"
